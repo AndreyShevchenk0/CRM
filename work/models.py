@@ -10,7 +10,7 @@ class Kontakt(models.Model):
     user = models.ForeignKey(User, related_name="posts", on_delete=models.CASCADE, verbose_name='админ')
     first_name = models.CharField(max_length=40, verbose_name='имя и отчество')
     last_name = models.CharField(max_length=20, verbose_name='фамилия')
-    companiName = models.CharField(max_length=40, verbose_name='имя компании')
+    companiName = models.CharField(max_length=40, verbose_name='название компании')
     logo = models.ImageField(verbose_name='лого')
     age = models.CharField(max_length=2, verbose_name='возраст')
     pasport = models.CharField(max_length=200, verbose_name='серия паспорта')
