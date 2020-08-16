@@ -16,14 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from work.views import mod
-from goods.views import dod
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('work.urls')),
-    # path('dashboard/', include('dashboard.urls')),
-    #path('goods/', include('goods.urls')),
-    # path('documents/', include('documents.urls')),
-
+    path('goods/', include('goods.urls')),#namespace='goods'
+    path('dashboard/', include('dashboard.urls')),
+    path('deal/', include('deal.urls')),
+    path('documents/', include('documents.urls')),
 ]

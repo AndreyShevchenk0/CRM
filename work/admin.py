@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Kontakt# settings, HeadMenu
+from .models import Kontakt# * settings, HeadMenu
 
 
 # class BbAdmin(admin.ModelAdmin):

@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('bis/', views.dod, name='bs'),
+    path('dok/', views.dod, name='bed'),
 ]
