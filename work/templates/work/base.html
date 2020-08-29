@@ -1,10 +1,55 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,=">
     <title>CRM</title>
+    <link href="{% static 'work/style.css' %}" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-     <h1>МЕНЮ</h1>
+
+    <div class="header">
+        <img src="{% static 'images/IT27.jpg' %}" alt="IT" class="logo">
+        <ul>
+            <li>
+                <a href="#">CRM</a>
+            </li>
+            <li>
+                <a href="#">Контакти</a>
+            </li>
+            <li>
+                <a href="#">Воронка</a>
+            </li>
+            <li>
+                <a href="#">Сделки</a>
+            </li>
+            <li>
+                <a href="#">Товар</a>
+            </li>
+        </ul>
+        <div class="topnav-right">
+            <a href="#">Регистрация</a>
+            <a href="#">Вход</a>
+        </div>
+    </div>
+
+    <div class="logika">
+        <h1>БІЗНЕС ЛОГІКА</h1>
+    </div>
+
+
+    <div class="footer">
+        <div class="icons">
+            <h2>Footer</h2>
+        <h3>Всі права захишені 2020 р. Soft Developer by Andii Shevchenko</h3>
+            <ul class="sci">
+                <li><a href="#"><img src="ICONS/Facebook.png"></a></li>
+                <li><a href="#"><img src="ICONS/twitter.png"></a></li>
+                <li><a href="#"><img src="ICONS/instagram.jpg"></a></li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
