@@ -8,8 +8,7 @@ class Kontakt(models.Model):
     """ Модель Физ.лица  + Юр.лица """
 
     user = models.ForeignKey(User, related_name="posts", on_delete=models.CASCADE, verbose_name='админ')
-    first_name = models.CharField(max_length=40, verbose_name='имя и отчество')
-    last_name = models.CharField(max_length=20, verbose_name='фамилия')
+    name_user = models.CharField(max_length=40, verbose_name='ФИО')
     companiName = models.CharField(max_length=40, verbose_name='название компании')
     logo = models.ImageField(verbose_name='лого')
     age = models.CharField(max_length=2, verbose_name='возраст')
@@ -29,7 +28,8 @@ class Kontakt(models.Model):
     is_staff = models.BooleanField(default=False)
 
     def __str__(self):
-        return '%s object (%s)' % (self.__class__.__name__, self.pk)
+        return self.name_user
+        #return '%s object (%s)' % (self.__class__.__name__, self.pk)
 
     class Meta:
         verbose_name_plural = 'Данние клиентов'  # -обьявления

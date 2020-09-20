@@ -7,8 +7,8 @@ from deal.models import deal
 class dashboard(models.Model):
     """ Воронка (карточка клиента + стадии сделки )  """
 
-    view = models.ForeignKey(goods, on_delete=models.CASCADE, verbose_name='Состояние товара')
-    view1 = models.ForeignKey(Kontakt, on_delete=models.CASCADE, verbose_name='Покупатель + Товар')
+    view = models.ForeignKey(goods, on_delete=models.CASCADE, verbose_name='Tовар')
+    view1 = models.ForeignKey(Kontakt, on_delete=models.CASCADE, verbose_name='Покупатель')
     view2 = models.ForeignKey(deal, on_delete=models.CASCADE, verbose_name='Статус сделки')
     title2 = models.CharField(max_length=200, unique=True, verbose_name='Запись менеджера о погоде')
 

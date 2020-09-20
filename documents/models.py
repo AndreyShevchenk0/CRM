@@ -14,8 +14,8 @@ class documents(models.Model):
     podrad = models.CharField(max_length=2000, null=True, blank=True, verbose_name='Договор подряда')
     postavka = models.CharField(max_length=2000, null=True, blank=True, verbose_name='Договор поставки')
     uslugi = models.CharField(max_length=2000, null=True, blank=True, verbose_name='Договор оказания услуг')
-    universdok = models.CharField(max_length=2000, null=True, blank=True, verbose_name='Универсальний предаточний '
-                                                                                       'документ')
+    universdok = models.CharField(max_length=2000, null=True, blank=True,
+                                  verbose_name='Универсальний предаточний документ')
     listdoks = models.CharField(max_length=2000, null=True, blank=True, verbose_name='Список документов')
 
     def __str__(self):
