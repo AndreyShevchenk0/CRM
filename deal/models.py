@@ -16,7 +16,7 @@ class deal(models.Model):
     ]
 
     #slug = models.SlugField(max_length=250, verbose_name='получ.тов')  #  unique_for_date='получение товара',
-    time = models.DateTimeField(auto_now_add=True,)
+    time = models.DateTimeField(auto_now_add=True, verbose_name='дата заказа')
     kanban = models.ForeignKey(Kontakt, on_delete=models.CASCADE, verbose_name='имя заказчика')
     status = models.CharField(max_length=10, choices=CATEGORY, default='первий звонок', verbose_name='статус заказа')
     gods = models.ForeignKey(goods, on_delete=models.CASCADE, verbose_name=' список товара покупателя')

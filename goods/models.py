@@ -8,6 +8,7 @@ class goods(models.Model):
     kanban1 = models.ForeignKey(Kontakt, blank=False,  on_delete=models.CASCADE, verbose_name='наследование конт.')
 
     name_goods = models.CharField(max_length=100, verbose_name='товар или услуга')
+    quantity_goods_stock = models.CharField(max_length=15, verbose_name='товар в наличии на складе')
     goods_text = models.CharField(max_length=2000, verbose_name='описание')
     price = models.DecimalField(max_digits=8, decimal_places=4, verbose_name='цена')
     release_date = models.CharField(max_length=100, verbose_name='дата возможной поставки товара клиенту')

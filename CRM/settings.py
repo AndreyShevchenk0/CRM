@@ -109,7 +109,18 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'uk'
+
+LANGUAGES = [
+    ('ru', ('Russian')),
+    #('uk', ('Ukrainian')),
+    ('it', ('Italian')),
+    ('fr', ('French')),
+    ('de', ('German')),
+    ('es', ('Spanish')),
+    ('ja', ('Japanese')),
+    #('ja', gettext_noop('Japanese')),  # оригинал с git hab
+]
 
 TIME_ZONE = 'Europe/Kiev'
 
