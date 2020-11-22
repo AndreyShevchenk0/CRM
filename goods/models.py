@@ -1,7 +1,7 @@
 from django.db import models
 from work.models import Kontakt
 
-
+# Склад товара
 class goods(models.Model):
     """ Товар  = goods (или услуга) """
 
@@ -10,7 +10,7 @@ class goods(models.Model):
     name_goods = models.CharField(max_length=100, verbose_name='товар или услуга')
     quantity_goods_stock = models.CharField(max_length=15, verbose_name='товар в наличии на складе')
     goods_text = models.CharField(max_length=2000, verbose_name='описание')
-    price = models.DecimalField(max_digits=8, decimal_places=4, verbose_name='цена')
+    price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='цена')
     release_date = models.CharField(max_length=100, verbose_name='дата возможной поставки товара клиенту')
 
     def __str__(self):

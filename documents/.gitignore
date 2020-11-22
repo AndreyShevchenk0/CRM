@@ -1,0 +1,10 @@
+# pip install Зависимости
+pip install --pre xhtml2pdf  # перевод в pdf
+
+# Bootstrap*********************
+
+#import
+from io import BytesIO
+from django.http import HttpResponse
+from django.template.loader import get_template
+form xhtml2pdf import pisa
